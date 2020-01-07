@@ -35,7 +35,7 @@ public class MainFrame extends JFrame {
     }
 
     private JButton prevButton() {
-        JButton button = new JButton("◀");
+        JButton button = new JButton("<");
         button.addActionListener(prevImage());
         return button;
     }
@@ -49,7 +49,7 @@ public class MainFrame extends JFrame {
     }
 
     private JButton nextButton() {
-        JButton button = new JButton("▶");
+        JButton button = new JButton(">");
         button.addActionListener(nextImage());
         return button;
     }
@@ -68,7 +68,7 @@ public class MainFrame extends JFrame {
         return sid;
     }
 
-    private ImageDisplay getImageDisplay() {
+    ImageDisplay getImageDisplay() {
         return imageDisplay;
     }
 }
