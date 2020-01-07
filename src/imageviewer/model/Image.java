@@ -14,4 +14,12 @@ public class Image {
         return this.file.getName();
     }
 
+    public InputStream stream() {
+        try {
+            return new BufferedInputStream(new FileInputStream(this.file));
+        } catch (FileNotFoundException e) {
+            System.err.println("No se ha encontrado el archivo. Exception: " + e);
+            return null;
+        }
+    }
 }

@@ -1,5 +1,7 @@
 package imageviewer.view;
 
+import imageviewer.model.Image;
+
 public interface ImageDisplay {
-    void show();
+    void show(Image image);
 }
